@@ -1,0 +1,127 @@
+body {
+    width: 100%;
+    height:100%;
+    margin: 0;
+    background-color:rgb(75, 83, 75);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+header h1{
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.container{
+
+    margin: auto;
+    margin-top: 10px;
+    position: relative;
+    width: 50%;
+    height:0;
+    padding-bottom: 30%;
+    background:#4c4c4c;
+    border:solid 10px #2c2c2c;
+}
+.slide{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#i1,#i2,#i3,#i4,#i5{
+    display:none;
+}
+
+.nav{
+
+    width: 100%;
+    height:11px;
+    bottom: 12%;
+    position: absolute;
+    text-align: center;
+    z-index: 9;
+}
+
+.dots{
+
+    top:100px;
+    width: 28px;
+    height: 28px;
+    margin: 0 4px;
+    position:relative;
+    border-radius:50%;
+    display:inline-block;
+    background: rgba(0,0,0,.6);
+    cursor: pointer;
+
+}
+
+.slide img{
+    z-index:-1;
+}
+
+#i1:checked ~ #primeira,
+#i2:checked ~ #segunda,
+#i3:checked ~ #terceira,
+#i4:checked ~ #quarta,
+#i5:checked ~ #quinta{
+    z-index:9;
+}
+
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3,
+#i4:checked ~ .nav #dot4,
+#i5:checked ~ .nav #dot5{
+    background: #020202;
+
+}
+/* Estilos para dispositivos de tela grandes */
+@media (max-width: 768px) {
+    header h1{
+        text-align: center;
+        color:white;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+}
+
+/* Estilos para dispositivos de tela pequenos */
+@media (max-width: 480px) {
+    header h1{
+        text-align: center;
+        color:white;
+        font-size: 12px;
+        padding: 6px;
+    }
+    .nav{
+    width: 100%;
+    height:50px;
+    bottom: 12%;
+    position: absolute;
+    text-align: center;
+    z-index: 9;}
+
+    .dots{
+
+        top:100px;
+        width: 18px;
+        height: 18px;
+        margin: 0 4px;
+        position:relative;
+        border-radius:50%;
+        display:inline-block;
+        background: rgba(0,0,0,.6);
+        cursor: pointer;
+    }
+
+}

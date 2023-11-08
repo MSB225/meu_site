@@ -1,0 +1,147 @@
+body {
+    color: white;
+    background-color: rgb(75, 83, 75);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:12px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+a {
+    color: rgb(245, 243, 243);
+    text-decoration: none;
+
+}
+
+header img {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px rgb(68, 67, 67) solid;
+
+}
+
+main {
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: justify;
+
+}
+
+.center {
+
+    text-align: center;
+
+}
+
+footer {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+footer img {
+
+    width: 60px;
+    height: 40px;
+    margin: 10px;
+}
+
+footer a {
+    margin: 10px;
+    text-align: center;
+}
+
+footer p {
+
+    margin-top: 0px;
+
+
+}
+
+.container {
+
+    padding: 0px 50px;
+
+}
+
+nav a:hover {
+
+    color: rgb(7, 0, 0);
+
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 10px;
+        
+    }
+    footer img {
+
+        width: 50px;
+        height: 25px;
+        margin: 10px;
+    }
+    
+    footer a {
+        margin: 10px;
+        text-align: center;
+    }
+    
+    footer p {
+    
+        margin-top: 0px;
+    
+    }
+    header img {
+
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 5px rgb(68, 67, 67) solid;
+    
+    }
+
+}
+
+/* Estilos para dispositivos de tela pequenos */
+@media (max-width: 480px) {
+    body {
+        font-size: 8px;
+        
+    }
+    footer img {
+
+        width: 50px;
+        height: 20px;
+        margin: 5px;
+    }
+    
+    footer a {
+        margin: 8px;
+        text-align: center;
+    }
+    
+    footer p {
+    
+        margin-top: 0px;
+    
+    }
+    header img {
+
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 5px rgb(68, 67, 67) solid;
+    
+    }
+
+}

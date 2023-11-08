@@ -1,0 +1,51 @@
+body{
+
+    color:white;
+    background-color:rgb(75, 83, 75);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80%;
+
+}
+
+header img {
+
+    width: 400px;
+    height: 500px;
+    border: 5px rgb(68, 67, 67) solid;
+    
+}
+.center{
+
+    text-align: center;
+}
+main{
+
+    text-align: center;
+
+
+}
+a{
+    color:white;
+    text-decoration:none;
+  
+}
+
+a img{
+
+    width: 50px;
+    height: 50px;
+}  
+
+@media (max-width: 768px) {
+    body{
+        font-size: 12px;
+    }
+}
+
+/* Estilos para dispositivos de tela pequenos */
+@media (max-width: 480px) {
+   body{
+        font-size: 8px;
+   }
+    
+}
